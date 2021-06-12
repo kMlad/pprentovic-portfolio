@@ -1,11 +1,18 @@
+import { useState } from "react";
 import "./App.css";
+import BurgerMenu from "./components/burger-menu";
+import Header from "./components/header";
 
 function App() {
+  const [burgerIsOpen, setBurgerIsOpen] = useState(false);
+  const handleBurger = () => {
+    setBurgerIsOpen(!burgerIsOpen);
+  };
+
   return (
     <div className="App">
-      <div className="tailwind-test ">
-        Koga otidov da jadam so stolici vidov deka nema nisto
-      </div>
+      <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
+      <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
     </div>
   );
 }

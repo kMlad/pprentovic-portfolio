@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .tailwind-test {
-  @apply font-sans font-medium text-2xl text-blue-50 bg-blue-700;
+  @apply font-sans font-medium text-2xl text-blue-50;
 }
 
 * {
@@ -12,5 +12,5 @@
 }
 
 body {
-  @apply font-sans;
+  @apply font-sans bg-gradient-to-br from-startGradient to-endGradient bg-cover bg-center bg-no-repeat;
 }
