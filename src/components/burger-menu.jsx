@@ -2,22 +2,21 @@ import React, { useState, useEffect } from "react";
 import BurgerNavLink from "./burger-nav-link";
 
 const BurgerMenu = ({ burgerIsOpen }) => {
-  const [openMenu] = useState(burgerIsOpen);
-  const [navLinks] = useState([
+  const [navLinks, setNavLinks] = useState([
     { content: "Home", position: "first" },
     { content: "About Me", position: "middle" },
     { content: "Projects", position: "last" },
   ]);
   useEffect(() => {
-    console.log(burgerIsOpen);
+    console.log("burger is open " + burgerIsOpen);
   });
   return (
     <div
       className={`${
-        openMenu ? "flex" : "hidden"
-      } burger   z-40 top-0 right-0 h-screen w-7/12 bg-black  flex-col justify-center items-center`}
+        burgerIsOpen ? "flex fixed" : "hidden"
+      } burger  md:hidden bg-opacity-90  z-40 top-0 right-0 h-screen w-7/12 bg-black  flex-col justify-center items-center`}
     >
-      <div className="burger-inner flex container w-11/12 flex-col">
+      <div className="burger-inner flex container w-9/12 flex-col">
         {navLinks.map(({ content, position }, index) => (
           <BurgerNavLink content={content} position={position} key={index} />
         ))}

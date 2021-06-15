@@ -19,6 +19,8 @@ module.exports = {
         "pp-logo": "url('./assets/pp-logo.png')",
         "burger-icon": "url('./assets/burger-menu-icon.png')",
         "x-icon": "url('./assets/x-icon.png')",
+        "spike-mobile": "url('./assets/spike-mobile.png')",
+        "circle-triangle": "url('./assets/circle-triangle.png')",
       }),
     },
     fontFamily: {

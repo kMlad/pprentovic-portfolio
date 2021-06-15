@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import BurgerMenu from "./components/burger-menu";
 import Header from "./components/header";
+import CustomButton from "./components/custom-button";
+import HomePage from "./pages/Homepage";
 
 function App() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
@@ -13,6 +15,7 @@ function App() {
     <div className="App">
       <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
       <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
+      <HomePage />
     </div>
   );
 }
