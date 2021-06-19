@@ -1,0 +1,10 @@
+{
+  "title": "My Design skills",
+  "type": "slider",
+  "skills": {
+    "Adobe XD": 100,
+    "Illustrator": 100,
+    "Photoshop": 92,
+    "After Effect": 82
+  }
+}

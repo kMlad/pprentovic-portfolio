@@ -3,7 +3,7 @@ import "./App.css";
 import BurgerMenu from "./components/burger-menu";
 import Header from "./components/header";
 import CustomButton from "./components/custom-button";
-import HomePage from "./pages/Homepage";
+import HomePage from "./pages/Homepage-Mobile";
 
 function App() {
   const [burgerIsOpen, setBurgerIsOpen] = useState(false);
