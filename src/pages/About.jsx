@@ -4,6 +4,7 @@ import VertLine from "../assets/VertLine.svg";
 import AboutBtn from "../components/About/about-btn";
 import AboutDesc from "../components/About/about-desc";
 import AboutSlider from "../components/About/about-slider";
+import PrevNextBtns from "../components/About/prev-next-btns";
 
 const AboutPage = () => {
   const [currentContent, setCurrentContent] = useState(0);
@@ -22,8 +23,11 @@ const AboutPage = () => {
 
   return (
     <>
-      <div className="container flex flex-col md:flex-row items-center justify-between mx-auto">
-        <div className="btns flex flex-col justify-between items-center">
+      <div className="container py-10 flex flex-col md:flex-row items-center justify-start mx-auto">
+        <div
+          style={{ height: "500px" }}
+          className="btns flex flex-col justify-between items-center"
+        >
           {JsonData.map((item, index) => (
             <AboutBtn
               handleChange={handleChange}
@@ -31,11 +35,12 @@ const AboutPage = () => {
               isActive={currentContent === index}
               key={"btn" + index}
               index={index}
+              length={JsonData.length}
             />
           ))}
         </div>
         <img src={VertLine} alt="lalala" className="mx-16" />
-        <div className="desc">
+        <div className="desc w-full">
           {JsonData.map((item, index) => {
             return (
               <>
@@ -48,16 +53,20 @@ const AboutPage = () => {
                     length={JsonData.length - 1}
                     title={item.title}
                     handleChange={handleChange}
-                    setCurrentContent={setCurrentContent}
-                    currentContent={currentContent}
-                    dataLength={JsonData.length}
                   />
                 ) : (
                   <AboutSlider
                     skills={item.skills}
                     isActive={currentContent === index}
+                    title={item.title}
                   />
                 )}
+                <PrevNextBtns
+                  setCurrentContent={setCurrentContent}
+                  currentContent={currentContent}
+                  dataLength={JsonData.length}
+                  isActive={currentContent === index}
+                />
               </>
             );
           })}

@@ -1,14 +1,6 @@
 import React, { useEffect } from "react";
 
-const AboutDesc = ({
-  desc,
-  isActive,
-  img,
-  title = null,
-  setCurrentContent = null,
-  currentContent,
-  dataLength = null,
-}) => {
+const AboutDesc = ({ desc, isActive, img, title = null }) => {
   return (
     <>
       <div
@@ -21,32 +13,13 @@ const AboutDesc = ({
             {title}
           </h3>
           <div
+            style={{ height: "400px" }}
             className={`
           bg-circle-triangle py-16 bg-center bg-cover bg-no-repeat flex flex-col justify-between items-center md:items-start`}
           >
             <p className="text-white w-10/12 text-center md:text-left text-base font-light leading-8">
               {desc}
             </p>
-          </div>
-          <div className="btns hidden md:flex justify-start items-center">
-            <div
-              onClick={() => {
-                currentContent === 0
-                  ? setCurrentContent(dataLength - 1)
-                  : setCurrentContent(currentContent - 1);
-              }}
-              className="bg-black border rounded-full cursor-pointer mr-4 border-powerPurple text-white text-base font-light flex justify-center items-center h-8 w-24"
-            >
-              prev
-            </div>
-            <div
-              onClick={() => {
-                setCurrentContent(currentContent + 1);
-              }}
-              className="bg-black border rounded-full cursor-pointer ml-4 border-powerPurple text-white text-base font-light flex justify-center items-center h-8 w-24"
-            >
-              next
-            </div>
           </div>
         </div>
         <img

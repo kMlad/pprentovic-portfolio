@@ -20,7 +20,7 @@ function App() {
       <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
       <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
       {/* <HomePage /> */}
-      {/* <AboutMobile /> */}
+      <AboutMobile />
       {/* <AboutDesc
         isActive={true}
         title={"Me as a person"}
@@ -31,7 +31,7 @@ function App() {
           "https://raw.githubusercontent.com/kMlad/pprentovic-portfolio/master/src/assets/peki-basket.png"
         }
       /> */}
-      <AboutPage />
+      {/* <AboutPage /> */}
       {/* <AboutSlider /> */}
     </div>
   );
