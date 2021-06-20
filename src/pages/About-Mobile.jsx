@@ -30,17 +30,23 @@ const AboutMobile = () => {
                 handleChange={handleChange}
                 cta={item.title}
                 isActive={currentContent === index}
-                key={index}
+                key={"btn" + index}
                 index={index}
               />
+              {/* <div className="h-40"></div> */}
               {item.type === "paragraph" ? (
                 <AboutDesc
                   desc={item.desc}
                   isActive={currentContent === index}
-                  key={index}
+                  key={"desc" + index}
+                  img={item.img}
+                  length={JsonData.length - 1}
                 />
               ) : (
-                <AboutSlider />
+                <AboutSlider
+                  skills={item.skills}
+                  isActive={currentContent === index}
+                />
               )}
             </>
           );

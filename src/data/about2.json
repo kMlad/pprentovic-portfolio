@@ -1,10 +1,30 @@
 {
   "title": "My Design skills",
   "type": "slider",
-  "skills": {
-    "Adobe XD": 100,
-    "Illustrator": 100,
-    "Photoshop": 92,
-    "After Effect": 82
-  }
+  "skills": [
+    {
+      "title": "Adobe XD",
+      "value": 56,
+      "color": "#F85FED",
+      "bgcolor": "#460137"
+    },
+    {
+      "title": "Illustrator",
+      "value": 72,
+      "color": "#F79501",
+      "bgcolor": "#320100"
+    },
+    {
+      "title": "Photoshop",
+      "value": 92,
+      "color": "#30A6FA",
+      "bgcolor": "#011E36"
+    },
+    {
+      "title": "After Effect",
+      "value": 82,
+      "color": "#9999FF",
+      "bgcolor": "#00005B"
+    }
+  ]
 }

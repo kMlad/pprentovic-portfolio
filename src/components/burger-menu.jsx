@@ -7,9 +7,7 @@ const BurgerMenu = ({ burgerIsOpen }) => {
     { content: "About Me", position: "middle" },
     { content: "Projects", position: "last" },
   ]);
-  useEffect(() => {
-    console.log("burger is open " + burgerIsOpen);
-  });
+
   return (
     <div
       className={`${
