@@ -1,0 +1,87 @@
+[
+  {
+    "type": "UX/UI",
+    "mainTitle": "Digital Portfolio Website",
+    "client": "Brainster",
+    "desc": "Platform used for promoting students from Brainster North Macedonia",
+    "role": "UX Design / Research",
+    "date": "Jan 2021",
+    "overview": "Digital Portfolio - Brainster",
+    "concept": "Helping companies find tech people from every field and see their portfolios online in order to decide if they want to hire them. Giving tech workers more opportunity to find work from the platform",
+    "pinpoints": [
+      "Easy way to find your tech person",
+      "A platform for job opportunities",
+      "Access to a lot of information for free",
+      "Very good filtration",
+      "Building trust by showing already hired students"
+    ]
+  },
+  {
+    "type": "UX/UI",
+    "mainTitle": "Marketing Map Website",
+    "client": "Brainster",
+    "desc": "Platform for finding digital marketers in North Macedonia",
+    "role": "UX Design / Research",
+    "date": "Nov 2020",
+    "overview": "Marketing Map - Brainster",
+    "concept": "Helping marketers find job easier and help companies find their most suitable digital marketer to help them grow their business",
+    "pinpoints": [
+      "Easy way to find your a Marketer",
+      "A platform for job opportunities",
+      "Helping Brainster students find jobs",
+      "Very good filtration"
+    ]
+  },
+  {
+    "type": "UX/UI",
+    "mainTitle": "Italian Restaurant Website",
+    "client": "Olive",
+    "desc": "Online ordering food in Italian restaurant Olive Buenos Aires",
+    "role": "UI Design",
+    "date": "Oct 2020",
+    "overview": "Italian Restaurant based in Argentina",
+    "concept": "Bringing the pasta culture to Buenos Aires and giving them a cultural diversity through some Italian specialties motivated me to create this website",
+    "pinpoints": [
+      "Attractive Pictures",
+      "Meal Proposals/Discounts",
+      "More Information for the Food",
+      "Restaurant Location"
+    ]
+  },
+  {
+    "type": "Graphic",
+    "title": "Illustrations",
+    "projects": [
+      {
+        "desc": "Created an illustration for a client from Serbia",
+        "imgs": ""
+      },
+      {
+        "desc": "Created a personalized illustration for an Instagram influencer",
+        "imgs": ""
+      },
+      {
+        "desc": "Created a personalized logo illustration for a friend",
+        "imgs": ""
+      }
+    ]
+  },
+  {
+    "type": "Graphic",
+    "title": "Logos",
+    "projects": [
+      {
+        "desc": "Concepts for logo designs for Dream Studio",
+        "imgs": ""
+      },
+      {
+        "desc": "Concept for a logo design for FitBee",
+        "imgs": ""
+      },
+      {
+        "desc": "Concept for a logo design for Mladenovski Productions",
+        "imgs": ""
+      }
+    ]
+  }
+]
