@@ -1,6 +1,10 @@
 [
   {
-    "type": "UX/UI",
+    "id": "ux-1",
+    "slug": "/digital-portfolio",
+    "type": "ux/ui",
+    "color1": "#FBD132",
+    "color2": "#C7A629",
     "mainTitle": "Digital Portfolio Website",
     "client": "Brainster",
     "desc": "Platform used for promoting students from Brainster North Macedonia",
@@ -17,7 +21,11 @@
     ]
   },
   {
-    "type": "UX/UI",
+    "id": "ux-2",
+    "type": "ux/ui",
+    "slug": "/marketing-map",
+    "color1": "#6A0E84",
+    "color2": "#46005A",
     "mainTitle": "Marketing Map Website",
     "client": "Brainster",
     "desc": "Platform for finding digital marketers in North Macedonia",
@@ -33,7 +41,11 @@
     ]
   },
   {
-    "type": "UX/UI",
+    "id": "ux-3",
+    "type": "ux/ui",
+    "slug": "/italian-restaurant",
+    "color1": "#F29C3E",
+    "color2": "#9A6226",
     "mainTitle": "Italian Restaurant Website",
     "client": "Olive",
     "desc": "Online ordering food in Italian restaurant Olive Buenos Aires",
@@ -49,8 +61,14 @@
     ]
   },
   {
-    "type": "Graphic",
-    "title": "Illustrations",
+    "id": "graphic-1",
+    "type": "graphic",
+    "slug": "illustrations",
+    "role": "Graphic Design",
+    "desc": "Illustration designs I created during the quarantine period for clients",
+    "color1": "#A87B51",
+    "color2": "#A87B51",
+    "mainTitle": "Illustrations",
     "projects": [
       {
         "desc": "Created an illustration for a client from Serbia",
@@ -67,8 +85,14 @@
     ]
   },
   {
-    "type": "Graphic",
-    "title": "Logos",
+    "id": "graphic-2",
+    "role": "Graphic Design",
+    "slug": "logos",
+    "type": "graphic",
+    "desc": "Created multiple logo designs for companies all over The World",
+    "color1": "#FD1801",
+    "color2": "#A51001",
+    "mainTitle": "Logo Designs",
     "projects": [
       {
         "desc": "Concepts for logo designs for Dream Studio",

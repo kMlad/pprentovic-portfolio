@@ -1,4 +1,5 @@
 const defaultColors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
@@ -9,6 +10,15 @@ module.exports = {
       endGradient: "#161618",
       powerPurple: "#B700EA",
       ...defaultColors,
+    },
+    fontSize: {
+      footerSmall: "7px",
+      ...defaultTheme.fontSize,
+    },
+    screens: {
+      xxs: "350px",
+      xs: "448px",
+      ...defaultTheme.screens,
     },
     extend: {
       backgroundImage: (theme) => ({

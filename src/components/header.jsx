@@ -1,34 +1,51 @@
-import React, { useState } from "react";
-import NavLink from "./nav-link";
 import pplogo from "../assets/pp-logo.png";
+import {
+  BrowserRouter,
+  Link,
+  withRouter,
+  Route,
+  Router,
+} from "react-router-dom";
 
 const Header = ({ handleBurger, burgerIsOpen }) => {
-  const [navLinks] = useState([
-    { content: "Home", position: "left" },
-    { content: "About Me", position: "middle" },
-    { content: "Projects", position: "right" },
-  ]);
-
   return (
     <div className="header w-10/12 md:w-9/12  flex py-8 flex-row container mx-auto justify-between items-center">
-      <img
-        src={pplogo}
-        alt="pplogo"
-        style={{ height: "72px" }}
-        className="transform duration-300 hover:scale-110 cursor-pointer"
-      ></img>
+      {/* <BrowserRouter> */}
+      <Link to="/">
+        <img
+          src={pplogo}
+          alt="pplogo"
+          className="transform h-12 md:h-20 duration-300 hover:scale-110 cursor-pointer"
+        ></img>
+      </Link>
       <nav>
         <ul className="hidden flex-row justify-center items-center md:flex">
-          {navLinks.map(({ content, position }, index) => (
-            <NavLink content={content} position={position} key={index} />
-          ))}
+          <li
+            className={`text-white text-xl font-light mr-10 lg:mr-14 transition duration-300 hover:text-powerPurple border-0 hover:border-b hover:border-powerPurple cursor-pointer`}
+          >
+            <Link to="/">Home</Link>
+          </li>
+          <li
+            className={`text-white text-xl font-light mr-10 lg:mr-14 transition duration-300 hover:text-powerPurple border-0 hover:border-b hover:border-powerPurple cursor-pointer`}
+          >
+            <Link to="/about">About</Link>
+          </li>
+          <li
+            className={`text-white text-xl font-light mr-10 lg:mr-14 transition duration-300 hover:text-powerPurple border-0 hover:border-b hover:border-powerPurple cursor-pointer`}
+          >
+            <Link to="/projects">Projects</Link>
+          </li>
         </ul>
         <div
           className={`${burgerIsOpen ? "bg-x-icon" : "bg-burger-icon"} 
-          bg-center block md:hidden bg-cover h-8 w-8 z-50 relative cursor-pointer transform hover:scale-125 duration-300`}
+          bg-center block md:hidden bg-cover h-6 w-6 z-50 relative cursor-pointer transform hover:scale-125 duration-300`}
           onClick={handleBurger}
         ></div>
       </nav>
+      {/* </BrowserRouter> */}
+      {/* <BrowserRouter>
+        <Link to="/about">asd</Link>
+      </BrowserRouter> */}
     </div>
   );
 };

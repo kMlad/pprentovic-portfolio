@@ -23,25 +23,25 @@
     "skills": [
       {
         "title": "Adobe XD",
-        "value": 56,
+        "value": 89,
         "color": "#F85FED",
         "bgcolor": "#460137"
       },
       {
         "title": "Illustrator",
-        "value": 72,
+        "value": 89,
         "color": "#F79501",
         "bgcolor": "#320100"
       },
       {
         "title": "Photoshop",
-        "value": 92,
+        "value": 74,
         "color": "#30A6FA",
         "bgcolor": "#011E36"
       },
       {
-        "title": "After Effect",
-        "value": 82,
+        "title": "After Effects",
+        "value": 45,
         "color": "#9999FF",
         "bgcolor": "#00005B"
       }

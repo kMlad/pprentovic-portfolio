@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BurgerNavLink = ({ content, position }) => {
+const BurgerNavLink = ({ content, position, slug }) => {
   return (
     <div className="bnav-link">
       {position === "first" ? (
         <hr className="border border-powerPurple w-full" />
       ) : null}
-      <p className="my-10 text-center text-white text-xl font-light transition duration-300 hover:text-powerPurple cursor-pointer">
+      <Link
+        to={slug}
+        className="my-10 block text-center text-white text-xl font-light transition duration-300 hover:text-powerPurple cursor-pointer"
+      >
         {content}
-      </p>
+      </Link>
       <hr className="border border-powerPurple w-full" />
     </div>
   );

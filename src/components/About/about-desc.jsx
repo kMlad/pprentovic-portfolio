@@ -15,7 +15,7 @@ const AboutDesc = ({ desc, isActive, img, title = null }) => {
           <div
             style={{ height: "400px" }}
             className={`
-          bg-circle-triangle py-16 bg-center bg-cover bg-no-repeat flex flex-col justify-between items-center md:items-start`}
+           py-16 bg-center bg-cover bg-no-repeat flex flex-col justify-between items-center md:items-start`}
           >
             <p className="text-white w-10/12 text-center md:text-left text-base font-light leading-8">
               {desc}
@@ -25,7 +25,7 @@ const AboutDesc = ({ desc, isActive, img, title = null }) => {
         <img
           src={img}
           alt="placeholder"
-          className="h-80 w-72 mx-auto md:mx-0"
+          className="h-80 w-72 mt-10 mx-auto md:mx-0"
         />
       </div>
     </>
