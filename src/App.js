@@ -34,10 +34,10 @@ function App() {
         <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
         <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
         <Switch>
-          <Route path="/">
+          <Route path="/" exact>
             <HomePage />
           </Route>
-          <Route path="/about">
+          <Route path="/about" exact>
             <AboutPage />
           </Route>
           <Route path="/projects" exact>
