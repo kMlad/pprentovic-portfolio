@@ -34,7 +34,10 @@ function App() {
         <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
         <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
         <Switch>
-          <Route path="/about" component={AboutPage}>
+          <Route path="/">
+            <HomePage />
+          </Route>
+          <Route path="/about">
             <AboutPage />
           </Route>
           <Route path="/projects" exact>
