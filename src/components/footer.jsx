@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="w-full flex flex-row justify-between items-center md:mb-10">
         <div className="hidden md:flex flex-col items-start justify-between">
           <Link
-            to="/home"
+            to="/"
             className="text-white text-base cursor-pointer hover:text-powerPurple transition duration-200 mb-2"
           >
             Home

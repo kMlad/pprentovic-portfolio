@@ -11,7 +11,7 @@ const Header = ({ handleBurger, burgerIsOpen }) => {
   return (
     <div className="header w-10/12 md:w-9/12  flex py-8 flex-row container mx-auto justify-between items-center">
       {/* <BrowserRouter> */}
-      <Link to="/home">
+      <Link to="/">
         <img
           src={pplogo}
           alt="pplogo"
