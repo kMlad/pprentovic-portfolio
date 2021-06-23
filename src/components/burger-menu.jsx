@@ -3,7 +3,7 @@ import BurgerNavLink from "./burger-nav-link";
 
 const BurgerMenu = ({ burgerIsOpen }) => {
   const [navLinks, setNavLinks] = useState([
-    { content: "Home", position: "first", slug: "/" },
+    { content: "Home", position: "first", slug: "/home" },
     { content: "About Me", position: "middle", slug: "/about" },
     { content: "Projects", position: "last", slug: "/projects" },
   ]);

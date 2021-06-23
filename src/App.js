@@ -34,7 +34,7 @@ function App() {
         <Header handleBurger={handleBurger} burgerIsOpen={burgerIsOpen} />
         <BurgerMenu burgerIsOpen={burgerIsOpen} key={1} />
         <Switch>
-          <Route path="/">
+          <Route path="/home">
             <HomePage />
           </Route>
           <Route path="/about">
