@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CustomButton from "../components/custom-button";
 import AboutMobile from "./About-Mobile";
 import ProjectsPage from "./Projects";
@@ -16,7 +16,7 @@ const HomePage = () => {
             UX/UI & <br /> Graphic <br /> Designer
           </p>
           <p className="text-sm text-white font-extralight mb-9">
-            I like to solve problems and create designs
+            I like to solve problems and create visually appealing designs
           </p>
           <CustomButton />
         </div>

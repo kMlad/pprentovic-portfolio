@@ -15,11 +15,13 @@ const AboutDesc = ({ desc, isActive, img, title = null }) => {
           <div
             style={{ height: "400px" }}
             className={`
-           py-16 bg-center bg-cover bg-no-repeat flex flex-col justify-between items-center md:items-start`}
+           py-10 bg-center bg-cover bg-no-repeat flex flex-col justify-between items-center md:items-start`}
           >
-            <p className="text-white w-10/12 text-center md:text-left text-base font-light leading-8">
-              {desc}
-            </p>
+            {desc.split("\n").map((paragraph) => (
+              <p className="text-white w-10/12 text-center md:text-left text-base font-light leading-8 mb-4">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
         <img
